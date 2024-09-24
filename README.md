@@ -1,0 +1,1 @@
+This project, titled Assignment3, focuses on solving a series of basic programming tasks using Python. The tasks explore fundamental programming concepts such as user input, mathematical operations, conditional logic, classes, and object-oriented principles. Below is a summary of each task:
