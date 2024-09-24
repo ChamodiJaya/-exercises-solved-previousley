@@ -1,0 +1,85 @@
+Assignment3
+September 17, 2024
+1 Assignment3
+1.1 Chamodi Jayathilaka
+1.1.1 2024 - 09 - 17
+Q1
+[29]: A = int(input("Enter first number: "));
+B = int(input("Enter second number: "));
+print("The product is:", A*B);
+Enter first number: 5
+Enter second number: 6
+The product is: 30
+[ ]:
+Q2
+[3]: import math
+r = float(input("Enter the radius of the circle: "))
+area = math.pi * r ** 2
+print(f"The area of the circle is: {area}")
+Enter the radius of the circle: 10
+The area of the circle is: 314.1592653589793
+Q3
+[25]: num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (add = A, subtract = S, multiply = M,␣
+↪divide = D): ").upper();
+if operation == "A":
+result = num1 + num2
+print(f"The result is: {result}");
+elif operation == "S":
+result = num1 - num2
+print(f"The result is: {result}");
+1
+elif operation == "M":
+result = num1 * num2
+print(f"The result is: {result}");
+elif operation == "D":
+if num2 != 0:
+result = num1 / num2
+print(f"The result is: {result}");
+else:
+print ( "Error: Division by zero is not allowed.");
+else:
+print ("Invalid operation.");
+Enter the first number: 2
+Enter the second number: 5
+Enter the operation (add = A, subtract = S, multiply = M, divide = D): D
+The result is: 0.4
+[ ]:
+Q4
+[27]: class Rectangle:
+def __init__(self, length, width):
+self.length = length
+self.width = width
+def area(self):
+return self.length * self.width
+A = int(input("Enter length: "));
+B = int(input("Enter width: "));
+r = Rectangle(A, B)
+print("The area of the rectangle is:", r.area())
+Enter length: 5
+Enter width: 10
+The area of the rectangle is: 50
+[ ]:
+Q5
+[28]: class Shape:
+def __init__(self, name, length):
+self.name = name
+self.length = length
+def area(self):
+2
+return 0
+class Square(Shape):
+def __init__(self, name, length):
+super().__init__(name, length)
+def area(self):
+return self.length ** 2
+def describe(self):
+return f"This is a: {self.name}"
+s = Square('square', 5)
+print("The area is:", s.area())
+print(s.describe())
+The area is: 25
+This is a: square
+[ ]:
+3
